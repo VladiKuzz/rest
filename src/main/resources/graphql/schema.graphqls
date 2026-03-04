@@ -1,0 +1,22 @@
+type Film {
+  id: ID!
+  titolo: String!
+  anno: Int!
+  regista: String!
+}
+
+type Query {
+  films: [Film!]!
+  film(id: ID!): Film
+}
+
+input FilmInput {
+  titolo: String!
+  anno: Int!
+  regista: String!
+}
+
+type Mutation {
+  createFilm(input: FilmInput!): Film!
+  deleteFilm(id: ID!): Boolean!
+}

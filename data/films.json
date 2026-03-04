@@ -1,0 +1,16 @@
+[ {
+  "id" : "e3357e02-88e0-4871-8d5b-4bd200531ef9",
+  "titolo" : "Il Padrino",
+  "anno" : 1972,
+  "regista" : "Francis Ford Coppola"
+}, {
+  "id" : "cbe755ad-ea13-42ce-aa9f-7eb80c1bd41c",
+  "titolo" : "Interstellar",
+  "anno" : 2014,
+  "regista" : "Christopher Nolan"
+}, {
+  "id" : "6276570d-d825-42da-9bb6-5cbfa8f122ad",
+  "titolo" : "Matrix",
+  "anno" : 1999,
+  "regista" : "Wachowski"
+} ]

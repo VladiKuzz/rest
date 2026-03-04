@@ -1,0 +1,29 @@
+syntax = "proto3";
+package film;
+
+option java_multiple_files = true;
+option java_package = "com.scuola.apichallenge.grpc";
+option java_outer_classname = "FilmProto";
+
+message Film {
+  string id = 1;
+  string titolo = 2;
+  int32 anno = 3;
+  string regista = 4;
+}
+
+message FilmId {
+  string id = 1;
+}
+
+message FilmList {
+  repeated Film films = 1;
+}
+
+message Empty {}
+
+service FilmService {
+  rpc ListFilms(Empty) returns (FilmList);
+  rpc GetFilm(FilmId) returns (Film);
+  rpc CreateFilm(Film) returns (Film);
+}
